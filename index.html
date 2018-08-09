@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link rel="icon" href="./static/favicon.ico" />
-  <script src="main.js"></script>
+  
 </head>
 
 <body>
@@ -46,10 +46,14 @@
   <div class="container container--max">
     <div class="grid main">
       <div class="grid__item one-third">
-        <!-- <Carousel images={[ '/static/images/publi1.jpg', '/static/images/publi2.jpg', '/static/images/publi3.jpg' ]} /> -->
-        <a href="./static/pdf_ediciones/018.pdf" target="_blank">
+        <div class="carousel" >
+          <div class="carousel carouseljs"></div>
+            <button class="carousel__button carousel__button--left" onclick="cambiarImagenLeft()">&#60;</button>
+            <button class="carousel__button carousel__button--right" onclick="cambiarImagenRight()">&#62;</button>
+        </div>
+        <a href="./static/pdf_ediciones/019.pdf" target="_blank">
           <div class="main__magazine">
-            <img class="main__image" src="./static/images/edition-images/18.jpg" alt="" />
+            <img class="main__image" src="./static/images/edition-images/19.jpeg" alt="" />
           </div>
         </a>
       </div><!--
@@ -110,9 +114,9 @@
         </div>
       </div><!--
        --><div class="grid__item one-third">
-        <a href="./static/pdf_ediciones/019.pdf" target="_blank">
+        <a href="./static/pdf_ediciones/020.pdf" target="_blank">
           <div class="main__magazine">
-            <img class="main__image main__image--m0" src="./static/images/edition-images/19.jpeg" alt="" />
+            <img class="main__image main__image--m0" src="./static/images/edition-images/20.jpeg" alt="" />
           </div>
         </a>
         <div class="main__advertisement">
@@ -129,6 +133,7 @@
       <img class="social__icon" src="./static/images/logos/insta.png" alt="Instagram logo" />
     </a>
   </footer>
+  <script src="carousel.js"></script>
 </body>
 
 </html>
